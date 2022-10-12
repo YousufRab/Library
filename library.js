@@ -23,7 +23,7 @@ function addBookToLibrary () {
 myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
 myLibrary.push(new Book("The Hobbit", "JRR Tolkein", 239, true));
 
-const library = document.getElementsByClassName('library');
+const library = document.getElementsByClassName("library");
 
 function createCard () {
     const newCard = document.createElement("div");
@@ -36,4 +36,7 @@ function createCard () {
     length.class = "length";
     const read = document.createElement("div");
     read.class = "read";
+
+    library.appendChild(newCard);
+    newCard.appendChild(title, author, length, read);
 }
