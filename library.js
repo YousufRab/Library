@@ -30,5 +30,10 @@ function createCard () {
     newCard.classList.add("card");
     const title = document.createElement("p");
     title.class = "title";
-
+    const author = document.createElement("p");
+    author.class = "author";
+    const length = document.createElement("p");
+    length.class = "length";
+    const read = document.createElement("div");
+    read.class = "read";
 }
