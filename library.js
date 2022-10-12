@@ -19,3 +19,6 @@ function addBookToLibrary () {
     }
     myLibrary.push(new Book(newTitle, newAuthor, newPages, newRead));
 }
+
+myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
+myLibrary.push(new Book("The Hobbit", "JRR Tolkein", 239, true));
