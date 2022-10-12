@@ -17,7 +17,5 @@ function addBookToLibrary () {
     } else { 
         newRead = false;
     }
-    myLibrary.push(Book(newTitle, newAuthor, newPages, newRead));
-    console.log(myLibrary);
+    myLibrary.push(new Book(newTitle, newAuthor, newPages, newRead));
 }
-
