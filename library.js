@@ -1,4 +1,8 @@
 let myLibrary = [];
+let formTitle = "";
+let formAuthor = "";
+let formPages = 0;
+let formRead = false;
 
 function Book(title, author, pages, read) {
     this.title = title;
