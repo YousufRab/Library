@@ -1,4 +1,6 @@
 let myLibrary = [];
+
+// Temporary variables for collecting form data
 let formTitle = "";
 let formAuthor = "";
 let formPages = 0;
@@ -13,8 +15,15 @@ function Book(title, author, pages, read) {
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
-    
+
 })
+
+function collectFormValue (){
+    formTitle = document.getElementById('bookName').value;
+    formAuthor = document.getElementById('bookAuthor').value;
+    formPages = document.getElementById('bookPages').value;
+    let bookStatus = document.getElementById()
+}
 
 function addBookToLibrary () {
     let newTitle = prompt("What is the book's title?");
