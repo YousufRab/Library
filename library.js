@@ -48,3 +48,7 @@ function createRadioButton (){
     firstRadioBtn.setAttribute('value', 'readBook');
     firstRadioBtn.setAttribute()
 }
+
+function openForm () {
+    document.getElementById('bookForm').style.display = 'block';
+}
