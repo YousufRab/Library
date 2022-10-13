@@ -11,6 +11,8 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+const formSubBtn = document.querySelector('#formSub');
+
 function addBookToLibrary () {
     let newTitle = prompt("What is the book's title?");
     let newAuthor = prompt("Who is the author?");
