@@ -19,13 +19,13 @@
                 <span></span>
             </div>
             <div>
-                <label for="bookAuthor">Author (enter 'n/a' if not sure)</label>
+                <label for="bookAuthor">Author (enter 'n/a' if unsure)</label>
                 <input type="text" id="bookAuthor" required>
                 <span></span>
             </div>
             <div>
-                <label for=""></label>
-                <input type="text">
+                <label for="">Page Count (enter '0' if unsure)</label>
+                <input type="number" id="pages" required>
                 <span></span>
             </div>
         </fieldset>
@@ -56,7 +56,7 @@
     </div>
     <footer>
         <button onclick="createCard()">New Book</button>
-        <button>Add book to Library</button>
+        <button onclick="openForm()">Add book to Library</button>
     </footer>
 </body>
 </html>
