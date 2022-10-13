@@ -40,3 +40,11 @@ function createCard () {
     library.appendChild(newCard);
     newCard.append(title, author, length, read);
 }
+
+function createRadioButton (){
+    const firstRadioBtn = document.createElement('input');
+    firstRadioBtn.setAttribute('type', 'radio');
+    firstRadioBtn.id = 'bookRead';
+    firstRadioBtn.setAttribute('value', 'readBook');
+    firstRadioBtn.setAttribute()
+}
