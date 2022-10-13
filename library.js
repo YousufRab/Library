@@ -29,13 +29,13 @@ function createCard () {
     const newCard = document.createElement("div");
     newCard.classList.add("card");
     const title = document.createElement("p");
-    title.class = "title";
+    title.classList.add("title");
     const author = document.createElement("p");
-    author.class = "author";
+    author.classList.add("author");
     const length = document.createElement("p");
-    length.class = "length";
+    length.classList.add("length");
     const read = document.createElement("div");
-    read.class = "read";
+    read.classList.add("read");
 
     library.appendChild(newCard);
     newCard.appendChild(title, author, length, read);
