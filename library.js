@@ -38,5 +38,5 @@ function createCard () {
     read.classList.add("read");
 
     library.appendChild(newCard);
-    newCard.appendChild(title, author, length, read);
+    newCard.append(title, author, length, read);
 }
