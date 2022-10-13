@@ -18,11 +18,13 @@ formSubBtn.addEventListener('click', () => {
 
 })
 
-function collectFormValue (){
+function collectFormValues (){
     formTitle = document.getElementById('bookName').value;
     formAuthor = document.getElementById('bookAuthor').value;
     formPages = document.getElementById('bookPages').value;
-    let bookStatus = document.getElementById()
+    if (document.getElementById('bookRead').checked == true) {
+        formRead = true;
+    }
 }
 
 function addBookToLibrary () {
