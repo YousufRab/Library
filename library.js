@@ -25,10 +25,18 @@ formSubBtn.addEventListener('click', () => {
 
 function collectFormValues (){
     formTitle = document.getElementById('bookName').value;
+    tempTitle = formTitle;
+    formTitle = "";
     formAuthor = document.getElementById('bookAuthor').value;
+    tempAuthor = formAuthor;
+    formAuthor = "";
     formPages = document.getElementById('bookPages').value;
+    tempPages = formPages;
+    formPages = 0;
     if (document.getElementById('bookRead').checked == true) {
-        formRead = true;
+        tempRead = true;
+        document.getElementById('bookRead').checked = true;
+
     };
 }
 
