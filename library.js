@@ -1,10 +1,15 @@
 let myLibrary = [];
 
-// Temporary variables for collecting form data
+// Variables for collecting form data
 let formTitle = "";
 let formAuthor = "";
 let formPages = 0;
 let formRead = false;
+
+let tempTitle = "";
+let tempAuthor = "";
+let tempPages = 0;
+let tempRead = false;
 
 function Book(title, author, pages, read) {
     this.title = title;
@@ -24,8 +29,7 @@ function collectFormValues (){
     formPages = document.getElementById('bookPages').value;
     if (document.getElementById('bookRead').checked == true) {
         formRead = true;
-    }
-    console.log(formTitle, formAuthor, formPages, formRead);
+    };
 }
 
 function addBookToLibrary () {
@@ -59,7 +63,7 @@ function createCard () {
     read.classList.add("read");
 
     library.appendChild(newCard);
-    newCard.append(title, author, length, read);
+    newCard.append(title, author, length, read); 
 }
 
 function createRadioButton (){
