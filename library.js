@@ -93,7 +93,10 @@ function createCard () {
     firstRadioBtn.setAttribute('type', 'radio');
     firstRadioBtn.id = ('bookRead' + tempID);
     firstRadioBtn.setAttribute('value', 'readBook');
-    firstRadioBtn.setAttribute('name', 'bookName');
+
+    /* We need to use the tempID attribute for setting the 'name' attribute to also 
+       differentiate our radio button sets */
+    firstRadioBtn.setAttribute('name', ('bookName' + tempID));
     const firstLabel = document.createElement('label');
     firstLabel.setAttribute('for', ('bookRead' + tempID));
     firstLabel.textContent = "Read";
@@ -102,7 +105,7 @@ function createCard () {
     secondRadioBtn.setAttribute('type', 'radio');
     secondRadioBtn.id = ('bookNotRead' + tempID);
     secondRadioBtn.setAttribute('value', 'notRead');
-    secondRadioBtn.setAttribute('name', 'bookName');
+    secondRadioBtn.setAttribute('name', ('bookName' + tempID));
     secondRadioBtn.setAttribute('checked', true);
     const secondLabel = document.createElement('label');
     secondLabel.setAttribute('for', ('bookNotRead' + tempID));
