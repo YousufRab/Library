@@ -106,29 +106,6 @@ function createCard () {
 
 }
 
-function createRadioButton (){
-    const firstRadioBtn = document.createElement('input');
-    firstRadioBtn.setAttribute('type', 'radio');
-    firstRadioBtn.id = 'bookRead';
-    firstRadioBtn.setAttribute('value', 'readBook');
-    firstRadioBtn.setAttribute('name', 'bookName');
-    const firstLabel = document.createElement('label');
-    firstLabel.setAttribute('for', 'bookRead');
-    firstLabel.textContent = "Read";
-
-    const secondRadioBtn = document.createElement('input');
-    secondRadioBtn.setAttribute('type', 'radio');
-    secondRadioBtn.id = 'bookNotRead';
-    secondRadioBtn.setAttribute('value', 'notRead');
-    secondRadioBtn.setAttribute('name', 'bookName');
-    const secondLabel = document.createElement('label');
-    secondLabel.setAttribute('for', 'bookNotRead');
-    secondLabel.textContent = "Not Read";
-
-    return 
-
-}
-
 function openForm () {
     document.getElementById('bookForm').style.display = 'block';
 }
