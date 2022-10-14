@@ -85,28 +85,27 @@ function createCard () {
     const read = document.createElement("div");
     read.classList.add("read");
 
+    /* We need to generate a random six digit integer for creating unique radio button IDs,
+       otherwise all radio buttons of every card will be linked */
+    let tempID = Math.random().toString().substring(2, 6);
+
     const firstRadioBtn = document.createElement('input');
     firstRadioBtn.setAttribute('type', 'radio');
-    firstRadioBtn.id = 'bookRead';
+    firstRadioBtn.id = ('bookRead' + tempID);
     firstRadioBtn.setAttribute('value', 'readBook');
     firstRadioBtn.setAttribute('name', 'bookName');
     const firstLabel = document.createElement('label');
-    firstLabel.setAttribute('for', 'bookRead');
+    firstLabel.setAttribute('for', ('bookRead' + tempID));
     firstLabel.textContent = "Read";
 
     const secondRadioBtn = document.createElement('input');
     secondRadioBtn.setAttribute('type', 'radio');
-    
-    /* We need to generate a random six digit integer for creating unique radio button IDs,
-       otherwise all radio buttons of every card will be linked */
-    let tempID;
-     
-    secondRadioBtn.id = 'bookNotRead';
+    secondRadioBtn.id = ('bookNotRead' + tempID);
     secondRadioBtn.setAttribute('value', 'notRead');
     secondRadioBtn.setAttribute('name', 'bookName');
     secondRadioBtn.setAttribute('checked', true);
     const secondLabel = document.createElement('label');
-    secondLabel.setAttribute('for', 'bookNotRead');
+    secondLabel.setAttribute('for', ('bookNotRead' + tempID));
     secondLabel.textContent = "Not Read";
 
     library.appendChild(newCard);
