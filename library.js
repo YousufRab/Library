@@ -34,16 +34,21 @@ function collectFormValues (){
     }
     tempTitle = formTitle;
     formTitle = "";
+    document.getElementById('bookName').value = "";
+
     tempAuthor = formAuthor;
     formAuthor = "";
+    document.getElementById('bookAuthor').value = "";
+
     tempPages = formPages;
     formPages = 0;
+    formPages = document.getElementById('bookPages').value = null;
+
     if (document.getElementById('bookRead').checked == true) {
         tempRead = true;
-        document.getElementById('bookRead').checked = true;
+        document.getElementById('bookNotRead').checked = true;
 
-    };
-    console.log(tempTitle, tempAuthor, tempPages, tempRead);
+    }
 }
 
 function addBookToLibrary () {
