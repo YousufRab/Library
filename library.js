@@ -75,10 +75,13 @@ function createCard () {
     newCard.classList.add("card");
     const title = document.createElement("p");
     title.classList.add("title");
+    title.textContent = tempTitle;
     const author = document.createElement("p");
     author.classList.add("author");
+    author.textContent = tempAuthor;
     const length = document.createElement("p");
     length.classList.add("length");
+    length.textContent = tempPages + " pages";
     const read = document.createElement("div");
     read.classList.add("read");
 
@@ -93,6 +96,11 @@ function createCard () {
 
     const secondRadioBtn = document.createElement('input');
     secondRadioBtn.setAttribute('type', 'radio');
+    
+    /* We need to generate a random six digit integer for creating unique radio button IDs,
+       otherwise all radio buttons of every card will be linked */
+    let tempID;
+     
     secondRadioBtn.id = 'bookNotRead';
     secondRadioBtn.setAttribute('value', 'notRead');
     secondRadioBtn.setAttribute('name', 'bookName');
