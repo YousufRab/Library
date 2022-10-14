@@ -11,6 +11,7 @@ let tempAuthor = "";
 let tempPages = 0;
 let tempRead = false;
 
+// Constructor for Book objects 
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -90,7 +91,11 @@ function createRadioButton (){
     firstRadioBtn.setAttribute('type', 'radio');
     firstRadioBtn.id = 'bookRead';
     firstRadioBtn.setAttribute('value', 'readBook');
-    firstRadioBtn.setAttribute()
+    firstRadioBtn.setAttribute('name', 'bookName')
+
+    const secondRadioBtn = document.createElement('input');
+    secondRadioBtn.setAttribute('type', 'radio');
+    secondRadioBtn.id = 'bookNotRead';
 }
 
 function openForm () {
