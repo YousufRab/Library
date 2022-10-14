@@ -99,6 +99,12 @@ function createRadioButton (){
     const secondRadioBtn = document.createElement('input');
     secondRadioBtn.setAttribute('type', 'radio');
     secondRadioBtn.id = 'bookNotRead';
+    secondRadioBtn.setAttribute('value', 'notRead');
+    secondRadioBtn.setAttribute('name', 'bookName');
+    const secondLabel = document.createElement('label');
+    secondLabel.setAttribute('for', 'bookNotRead');
+    secondLabel.textContent = "Not Read";
+
 }
 
 function openForm () {
