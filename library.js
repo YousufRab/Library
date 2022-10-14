@@ -96,6 +96,7 @@ function createCard () {
     secondRadioBtn.id = 'bookNotRead';
     secondRadioBtn.setAttribute('value', 'notRead');
     secondRadioBtn.setAttribute('name', 'bookName');
+    secondRadioBtn.setAttribute('checked', true);
     const secondLabel = document.createElement('label');
     secondLabel.setAttribute('for', 'bookNotRead');
     secondLabel.textContent = "Not Read";
