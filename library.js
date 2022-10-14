@@ -91,7 +91,9 @@ function createRadioButton (){
     firstRadioBtn.setAttribute('type', 'radio');
     firstRadioBtn.id = 'bookRead';
     firstRadioBtn.setAttribute('value', 'readBook');
-    firstRadioBtn.setAttribute('name', 'bookName')
+    firstRadioBtn.setAttribute('name', 'bookName');
+    const firstLabel = document.createElement('label');
+    firstLabel.setAttribute('for', 'bookRead');
 
     const secondRadioBtn = document.createElement('input');
     secondRadioBtn.setAttribute('type', 'radio');
