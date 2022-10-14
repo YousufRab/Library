@@ -15,7 +15,7 @@ function Book(title, author, pages, read) {
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
-
+    collectFormValues();
 })
 
 function collectFormValues (){
@@ -25,6 +25,7 @@ function collectFormValues (){
     if (document.getElementById('bookRead').checked == true) {
         formRead = true;
     }
+    console.log(formTitle, formAuthor, formPages, formRead);
 }
 
 function addBookToLibrary () {
