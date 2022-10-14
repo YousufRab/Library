@@ -24,13 +24,18 @@ formSubBtn.addEventListener('click', () => {
 })
 
 function collectFormValues (){
+    
     formTitle = document.getElementById('bookName').value;
+    formAuthor = document.getElementById('bookAuthor').value;
+    formPages = document.getElementById('bookPages').value;
+    if (formTitle.length == 0 || formAuthor.length == 0 || formPages.length == 0) {
+        alert("Please fill in all fields before submitting");
+        return;
+    }
     tempTitle = formTitle;
     formTitle = "";
-    formAuthor = document.getElementById('bookAuthor').value;
     tempAuthor = formAuthor;
     formAuthor = "";
-    formPages = document.getElementById('bookPages').value;
     tempPages = formPages;
     formPages = 0;
     if (document.getElementById('bookRead').checked == true) {
@@ -38,6 +43,7 @@ function collectFormValues (){
         document.getElementById('bookRead').checked = true;
 
     };
+    console.log(tempTitle, tempAuthor, tempPages, tempRead);
 }
 
 function addBookToLibrary () {
