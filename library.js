@@ -30,8 +30,6 @@ formSubBtn.addEventListener('click', () => {
     }
     collectFormValues();
     createCard();
-    console.log(tempRead);
-    console.log(document.getElementById('bookReadRadioBtn').checked);
 });
 
 function collectFormValues (){
