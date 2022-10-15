@@ -29,9 +29,15 @@ formSubBtn.addEventListener('click', () => {
         return;
     }
     collectFormValues();
-    myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead);
+    myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead));
     createCard();
+    console.log(myLibrary);
 });
+
+const deleteBtn = document.querySelector('#removeBtn');
+deleteBtn.addEventListener('click', (event)=> {
+    (event.target.parentElement).remove();
+})
 
 function collectFormValues (){
     
@@ -121,4 +127,3 @@ function openForm () {
 }
 
 myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
-myLibrary.push(new Book("The Hobbit", "JRR Tolkein", 239, true));
