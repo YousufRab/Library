@@ -37,7 +37,7 @@ function collectFormValues (){
     formTitle = document.getElementById('bookName').value;
     formAuthor = document.getElementById('bookAuthor').value;
     formPages = document.getElementById('bookPages').value;
-    
+
     tempTitle = formTitle;
     formTitle = "";
     document.getElementById('bookName').value = "";
@@ -50,12 +50,12 @@ function collectFormValues (){
     formPages = 0;
     formPages = document.getElementById('bookPages').value = null;
 
-    if (document.getElementById('bookRead').checked == true) {
+    if (document.getElementById('bookReadRadioBtn').checked == true) {
         tempRead = true;
-        document.getElementById('bookNotRead').checked = true;
+        document.getElementById('bookNotReadRadioBtn').checked = true;
     } else {
         tempRead = false;
-        document.getElementById('bookNotRead').checked = true;
+        document.getElementById('bookNotReadRadioBtn').checked = true;
     }
 }
 
