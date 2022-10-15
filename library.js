@@ -91,6 +91,7 @@ function createCard () {
     firstRadioBtn.setAttribute('type', 'radio');
     firstRadioBtn.id = ('bookRead' + tempID);
     firstRadioBtn.setAttribute('value', 'readBook');
+    firstRadioBtn.setAttribute('checked',(tempRead));
 
     /* We need to use the tempID attribute for setting the 'name' attribute to also 
        differentiate our radio button sets */
