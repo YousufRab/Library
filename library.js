@@ -30,13 +30,16 @@ formSubBtn.addEventListener('click', () => {
     }
     collectFormValues();
     createCard();
-})
+    console.log(tempRead);
+    console.log(document.getElementById('bookReadRadioBtn').checked);
+});
 
 function collectFormValues (){
     
     formTitle = document.getElementById('bookName').value;
     formAuthor = document.getElementById('bookAuthor').value;
     formPages = document.getElementById('bookPages').value;
+    formRead = document.getElementById('bookReadRadioBtn').checked;
 
     tempTitle = formTitle;
     formTitle = "";
@@ -50,12 +53,10 @@ function collectFormValues (){
     formPages = 0;
     formPages = document.getElementById('bookPages').value = null;
 
-    if (document.getElementById('bookReadRadioBtn').checked == true) {
+    if (formRead) {
         tempRead = true;
-        document.getElementById('bookNotReadRadioBtn').checked = true;
     } else {
         tempRead = false;
-        document.getElementById('bookNotReadRadioBtn').checked = true;
     }
 }
 
@@ -63,8 +64,6 @@ function addBookToLibrary () {
     myLibrary.push(new Book(newTitle, newAuthor, newPages, newRead));
 }
 
-myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
-myLibrary.push(new Book("The Hobbit", "JRR Tolkein", 239, true));
 
 const library = document.querySelector('.library');
 
@@ -91,7 +90,7 @@ function createCard () {
     firstRadioBtn.setAttribute('type', 'radio');
     firstRadioBtn.id = ('bookRead' + tempID);
     firstRadioBtn.setAttribute('value', 'readBook');
-    firstRadioBtn.setAttribute('checked',(tempRead));
+    
 
     /* We need to use the tempID attribute for setting the 'name' attribute to also 
        differentiate our radio button sets */
@@ -105,11 +104,17 @@ function createCard () {
     secondRadioBtn.id = ('bookNotRead' + tempID);
     secondRadioBtn.setAttribute('value', 'notRead');
     secondRadioBtn.setAttribute('name', ('bookName' + tempID));
-    secondRadioBtn.setAttribute('checked',(tempRead));
+    
     const secondLabel = document.createElement('label');
     secondLabel.setAttribute('for', ('bookNotRead' + tempID));
     secondLabel.textContent = "Not Read";
 
+    if (tempRead == true) {
+        firstRadioBtn.setAttribute('checked', true);
+    } else {
+        secondRadioBtn.setAttribute('checked', true);
+    }
+     
     library.appendChild(newCard);
     read.append(firstRadioBtn, firstLabel, secondRadioBtn, secondLabel);
     newCard.append(title, author, length, read);
@@ -119,3 +124,6 @@ function createCard () {
 function openForm () {
     document.getElementById('bookForm').style.display = 'block';
 }
+
+myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
+myLibrary.push(new Book("The Hobbit", "JRR Tolkein", 239, true));
