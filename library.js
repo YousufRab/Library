@@ -33,7 +33,7 @@ formSubBtn.addEventListener('click', () => {
     createCard();
 });
 
-const deleteBtn = document.querySelector('#removeBtn');
+const deleteBtn = document.getElementById('removeBtn');
 deleteBtn.addEventListener('click', (event)=> {
     (event.target.parentElement).remove();
 })
@@ -119,6 +119,9 @@ function createCard () {
     newDeleteBtn.setAttribute('type', 'button');
     newDeleteBtn.id = "removeBtn";
     newDeleteBtn.textContent = "Remove from Library";
+    newDeleteBtn.onclick = (event) => {
+        (event.target.parentElement).remove();
+    }
      
     library.appendChild(newCard);
     read.append(firstRadioBtn, firstLabel, secondRadioBtn, secondLabel);
