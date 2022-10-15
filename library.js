@@ -114,10 +114,15 @@ function createCard () {
     } else {
         secondRadioBtn.setAttribute('checked', true);
     }
+
+    const newDeleteBtn = document.createElement('button');
+    newDeleteBtn.setAttribute('type', 'button');
+    newDeleteBtn.id = "removeBtn";
+    newDeleteBtn.textContent = "Remove from Library";
      
     library.appendChild(newCard);
     read.append(firstRadioBtn, firstLabel, secondRadioBtn, secondLabel);
-    newCard.append(title, author, length, read);
+    newCard.append(title, author, length, read, newDeleteBtn);
 
 }
 
