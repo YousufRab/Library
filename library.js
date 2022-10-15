@@ -37,6 +37,7 @@ function collectFormValues (){
     formTitle = document.getElementById('bookName').value;
     formAuthor = document.getElementById('bookAuthor').value;
     formPages = document.getElementById('bookPages').value;
+    
     tempTitle = formTitle;
     formTitle = "";
     document.getElementById('bookName').value = "";
@@ -52,7 +53,9 @@ function collectFormValues (){
     if (document.getElementById('bookRead').checked == true) {
         tempRead = true;
         document.getElementById('bookNotRead').checked = true;
-
+    } else {
+        tempRead = false;
+        document.getElementById('bookNotRead').checked = true;
     }
 }
 
@@ -101,7 +104,7 @@ function createCard () {
     secondRadioBtn.id = ('bookNotRead' + tempID);
     secondRadioBtn.setAttribute('value', 'notRead');
     secondRadioBtn.setAttribute('name', ('bookName' + tempID));
-    secondRadioBtn.setAttribute('checked', true);
+    secondRadioBtn.setAttribute('checked',(tempRead));
     const secondLabel = document.createElement('label');
     secondLabel.setAttribute('for', ('bookNotRead' + tempID));
     secondLabel.textContent = "Not Read";
