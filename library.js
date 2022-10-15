@@ -78,7 +78,7 @@ function createCard () {
 
     /* We need to generate a random six digit integer for creating unique radio button IDs,
        otherwise all radio buttons of every card will be linked */
-    let tempID = Math.random().toString().substring(2, 6);
+    let tempID = Math.random().toString().substring(2, 8);
 
     const firstRadioBtn = document.createElement('input');
     firstRadioBtn.setAttribute('type', 'radio');
