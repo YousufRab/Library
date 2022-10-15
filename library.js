@@ -21,11 +21,6 @@ function Book(title, author, pages, read) {
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
-    collectFormValues();
-})
-
-function collectFormValues (){
-    
     formTitle = document.getElementById('bookName').value;
     formAuthor = document.getElementById('bookAuthor').value;
     formPages = document.getElementById('bookPages').value;
@@ -33,6 +28,15 @@ function collectFormValues (){
         alert("Please fill in all fields before submitting");
         return;
     }
+    collectFormValues();
+    createCard();
+})
+
+function collectFormValues (){
+    
+    formTitle = document.getElementById('bookName').value;
+    formAuthor = document.getElementById('bookAuthor').value;
+    formPages = document.getElementById('bookPages').value;
     tempTitle = formTitle;
     formTitle = "";
     document.getElementById('bookName').value = "";
