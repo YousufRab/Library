@@ -29,6 +29,7 @@ formSubBtn.addEventListener('click', () => {
         return;
     }
     collectFormValues();
+    myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead);
     createCard();
 });
 
@@ -56,10 +57,6 @@ function collectFormValues (){
     } else {
         tempRead = false;
     }
-}
-
-function addBookToLibrary () {
-    myLibrary.push(new Book(newTitle, newAuthor, newPages, newRead));
 }
 
 
