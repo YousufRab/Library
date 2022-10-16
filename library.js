@@ -121,10 +121,14 @@ function displayBooks () {
                 (event.target.parentElement).remove();
             }
 
+            library.appendChild(newCard);
+            read.append(firstRadioBtn, firstLabel, secondRadioBtn, secondLabel);
+            newCard.append(title, author, length, read, newDeleteBtn);
+
+        } 
     }
     return;
 }
-
 
 function createCard () {
     const newCard = document.createElement("div");
@@ -193,3 +197,9 @@ function openForm () {
 }
 
 myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
+
+// Create event listener for page loading and run displayBooks to display myLibrary objects
+console.log(myLibrary)
+document.addEventListener("DOMContentLoaded", () => {
+    displayBooks();
+});
