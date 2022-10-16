@@ -31,6 +31,7 @@ formSubBtn.addEventListener('click', () => {
     collectFormValues();
     myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead));
     createCard();
+    document.getElementById('bookForm').style.display = 'none';
 });
 
 const deleteBtn = document.getElementById('removeBtn');
