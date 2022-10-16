@@ -1,5 +1,12 @@
+:root {
+    --color4: #234E70;
+    --color3: #FBF8BE;
+    --color1: #101820FF;
+    --color2: #FEE715FF;
+}
+
 body {
-    background-color:  #234E70;
+    background-color: var(--color1);
 }
 
 .library {
@@ -11,7 +18,7 @@ h2 {
     font-family: 'Fredoka One', cursive, sans-serif;
     letter-spacing: 3px;
     font-size: 45px;
-    color: #FBF8BE;
+    color: var(--color2);
 
 }
 
@@ -19,25 +26,25 @@ h2 {
     border: 1px solid red;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
-    background-color: #FBF8BE;
-    color: #234E70;
+    background-color: var(--color2);
+    color: var(--color1)
 }
 
 #bookForm {
     display: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
-    color: #234E70;
+    color: var(--color1);
 }
 
 fieldset {
-    background-color: #FBF8BE;
-    color: #234E70;
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
 fieldset > legend {
-    background-color: #FBF8BE;
-    color: #234E70;
+    background-color: var(--color2);
+    color: var(--color1);
 }
 
 #prototypeCard {
