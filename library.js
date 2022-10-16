@@ -71,7 +71,24 @@ const library = document.querySelector('.library');
    array items */
 
 function displayBooks () {
-    
+    if (myLibrary.length != 0) {
+        for (let i = 0; i < myLibrary.length; i++) {
+            const newCard = document.createElement("div");
+            newCard.classList.add("card");
+            const title = document.createElement("p");
+            title.classList.add("title");
+            title.textContent = myLibrary[i].title;
+            const author = document.createElement("p");
+            author.classList.add("author");
+            author.textContent = myLibrary[i].author;
+            const length = document.createElement("p");
+            length.classList.add("length");
+            length.textContent = myLibrary[i].pages + " pages";
+            const read = document.createElement("div");
+            read.classList.add("read");
+        }
+    }
+    return;
 }
 
 
