@@ -67,6 +67,14 @@ function collectFormValues (){
 
 const library = document.querySelector('.library');
 
+/* Create function to loop through myLibrary array and implement createCard() function on
+   array items */
+
+function displayBooks () {
+    
+}
+
+
 function createCard () {
     const newCard = document.createElement("div");
     newCard.classList.add("card");
