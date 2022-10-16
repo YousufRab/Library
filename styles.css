@@ -12,6 +12,9 @@ h2 {
 
 .card {
     border: 1px solid red;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+
 }
 
 #bookForm {
