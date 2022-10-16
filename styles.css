@@ -3,6 +3,13 @@
     row-gap: 10px;
 }
 
+h2 {
+    font-family: 'Fredoka One', cursive, sans-serif;
+    letter-spacing: 3px;
+    font-size: 45px;
+
+}
+
 .card {
     border: 1px solid red;
 }
