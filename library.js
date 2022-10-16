@@ -77,10 +77,10 @@ function displayBooks () {
             newCard.classList.add("card");
             const title = document.createElement("p");
             title.classList.add("title");
-            title.textContent = myLibrary[i].title;
+            title.textContent = "Title: " + myLibrary[i].title;
             const author = document.createElement("p");
             author.classList.add("author");
-            author.textContent = myLibrary[i].author;
+            author.textContent = "Author: " + myLibrary[i].author;
             const length = document.createElement("p");
             length.classList.add("length");
             length.textContent = myLibrary[i].pages + " pages";
@@ -135,10 +135,10 @@ function createCard () {
     newCard.classList.add("card");
     const title = document.createElement("p");
     title.classList.add("title");
-    title.textContent = tempTitle;
+    title.textContent = "Title: " + tempTitle;
     const author = document.createElement("p");
     author.classList.add("author");
-    author.textContent = tempAuthor;
+    author.textContent = "Author: " + tempAuthor;
     const length = document.createElement("p");
     length.classList.add("length");
     length.textContent = tempPages + " pages";
