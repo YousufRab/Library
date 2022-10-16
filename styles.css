@@ -19,6 +19,8 @@ h2 {
 
 #bookForm {
     display: none;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.5px;
 }
 
 #prototypeCard {
