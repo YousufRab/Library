@@ -86,7 +86,41 @@ function displayBooks () {
             length.textContent = myLibrary[i].pages + " pages";
             const read = document.createElement("div");
             read.classList.add("read");
-        }
+            
+            let tempID = Math.random().toString().substring(2, 8);
+
+            const firstRadioBtn = document.createElement('input');
+            firstRadioBtn.setAttribute('type', 'radio');
+            firstRadioBtn.id = ('bookRead' + tempID);
+            firstRadioBtn.setAttribute('value', 'readBook');
+            firstRadioBtn.setAttribute('name', ('bookName' + tempID));
+            const firstLabel = document.createElement('label');
+            firstLabel.setAttribute('for', ('bookRead' + tempID));
+            firstLabel.textContent = "Read";
+        
+            const secondRadioBtn = document.createElement('input');
+            secondRadioBtn.setAttribute('type', 'radio');
+            secondRadioBtn.id = ('bookNotRead' + tempID);
+            secondRadioBtn.setAttribute('value', 'notRead');
+            secondRadioBtn.setAttribute('name', ('bookName' + tempID));
+            const secondLabel = document.createElement('label');
+            secondLabel.setAttribute('for', ('bookNotRead' + tempID));
+            secondLabel.textContent = "Not Read";
+        
+            if (myLibrary[i].read == true) {
+                firstRadioBtn.setAttribute('checked', true);
+            } else {
+                secondRadioBtn.setAttribute('checked', true);
+            }
+        
+            const newDeleteBtn = document.createElement('button');
+            newDeleteBtn.setAttribute('type', 'button');
+            newDeleteBtn.id = "removeBtn";
+            newDeleteBtn.textContent = "Remove from Library";
+            newDeleteBtn.onclick = (event) => {
+                (event.target.parentElement).remove();
+            }
+
     }
     return;
 }
