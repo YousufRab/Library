@@ -30,15 +30,20 @@ h2 {
     color: var(--color1)
 }
 
+/* Use instructions from following link to create fade in/out effect for submit form
+   https://www.impressivewebs.com/animate-display-block-none/ */
+
 #bookForm {
     display: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
     color: var(--color1);
+    height: 400px;
+    width: 500px;
     position: absolute;
     right: 0;
     left: 0;
-    top: 400px;
+    top: 250px;
     bottom: 0;
     margin: auto;
 }
