@@ -21,13 +21,21 @@ h2 {
     letter-spacing: 1px;
     background-color: #FBF8BE;
     color: #234E70;
-
 }
 
 #bookForm {
     display: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
+    color: #234E70;
+}
+
+fieldset {
+    background-color: #FBF8BE;
+    color: #234E70;
+}
+
+fieldset > legend {
     background-color: #FBF8BE;
     color: #234E70;
 }
