@@ -1,3 +1,7 @@
+body {
+    background-color:  #234E70;
+}
+
 .library {
     display: grid;
     row-gap: 10px;
@@ -7,6 +11,7 @@ h2 {
     font-family: 'Fredoka One', cursive, sans-serif;
     letter-spacing: 3px;
     font-size: 45px;
+    color: #FBF8BE;
 
 }
 
@@ -14,6 +19,8 @@ h2 {
     border: 1px solid red;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 1px;
+    background-color: #FBF8BE;
+    color: #234E70;
 
 }
 
@@ -21,6 +28,8 @@ h2 {
     display: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
+    background-color: #FBF8BE;
+    color: #234E70;
 }
 
 #prototypeCard {
