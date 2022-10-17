@@ -96,5 +96,6 @@ footer, footer> a {
 }
 
 #gitImg {
-    
+    height: 16px;
+    background-color: white;
 }
