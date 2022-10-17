@@ -103,7 +103,7 @@ fieldset > legend {
     font-weight: 700;
     align-self: center;
     opacity: 0.6;
-    transition: 0.8s;
+    transition: 0.4s;
 }
 
 .openForm:hover {
