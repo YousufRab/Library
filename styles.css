@@ -33,7 +33,7 @@ h2 {
 /* Use instructions from following link to create fade in/out effect for submit form
    https://www.impressivewebs.com/animate-display-block-none/ */
 
-#bookForm {
+.form {
     display: none;
     font-family: 'Roboto', sans-serif;
     letter-spacing: 0.5px;
@@ -46,6 +46,7 @@ h2 {
     top: 250px;
     bottom: 0;
     margin: auto;
+    opacity: 0;
 }
 
 .form-visible {
