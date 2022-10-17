@@ -92,7 +92,7 @@ fieldset > legend {
 }
 
 .openForm {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -101,6 +101,11 @@ fieldset > legend {
     background-color: rgb(194, 194, 194);
     font-size: 34px;
     font-weight: 700;
+    align-self: center;
+}
+
+.openForm:hover {
+    
 }
 
 footer, footer> a {
