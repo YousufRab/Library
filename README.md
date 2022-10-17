@@ -2,7 +2,7 @@
 
 Library project for the Odin Project JavaScript full stack course. Created using JavaScript, CSS3 and HTML5.
 
-[[Live Demo]]
+[[Live Demo]](https://yousufrab.github.io/Library/)
 
 # Features
 - Store list of books in a virtual Library
