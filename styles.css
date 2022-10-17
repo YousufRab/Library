@@ -102,11 +102,14 @@ fieldset > legend {
     font-size: 34px;
     font-weight: 700;
     align-self: center;
+    opacity: 0.6;
+    transition: 0.8s;
 }
 
 .openForm:hover {
     border: 8px solid rgb(50, 255, 84);
     background-color: white;
+    opacity: 1;
 }
 
 footer, footer> a {
