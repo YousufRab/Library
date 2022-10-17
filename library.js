@@ -19,6 +19,8 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+const bookSubForm = document.querySelector('.form');
+
 // Button for opening add book form
 const openFormBtn = document.querySelector('.openForm');
 openFormBtn.addEventListener('click', function(e) {
