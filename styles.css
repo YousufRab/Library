@@ -48,6 +48,16 @@ h2 {
     margin: auto;
 }
 
+.form-visible {
+    display: block;
+}
+
+.form-active {
+    display:block;
+    opacity: 1;
+}
+
+
 fieldset {
     background-color: var(--color2);
     color: var(--color1);
