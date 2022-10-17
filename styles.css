@@ -57,6 +57,10 @@ h2 {
     opacity: 1;
 }
 
+.form-transition.form-visible {
+    display: block;
+    opacity: 1;
+}
 
 fieldset {
     background-color: var(--color2);
