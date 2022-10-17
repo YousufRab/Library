@@ -38,6 +38,12 @@ openFormBtn.addEventListener('click', function(e) {
     }
 }, false);
 
+bookSubForm.addEventListener('transitionend', function() {
+    bookSubForm.classList.remove('form-transition');
+    bookSubForm.classList.remove('form-visible');
+    bookSubForm.classList.remove('form-hidden');
+}, false);
+
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
     formTitle = document.getElementById('bookName').value;
@@ -50,7 +56,18 @@ formSubBtn.addEventListener('click', () => {
     collectFormValues();
     myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead));
     createCard();
-    document.getElementById('bookForm').style.display = 'none';
+    if (bookSubForm.classList.contains("form-active")) {
+        //hide
+        bookSubForm.classList.remove("form-active");
+        bookSubForm.classList.add('form-transition');
+        bookSubForm.classList.add('form-hidden');
+    } else {
+        // show
+        bookSubForm.classList.add('form-visible');
+        bookSubForm.clientWidth;
+        bookSubForm.classList.add('form-transition');
+        bookSubForm.classList.add('form-active');
+    }
 });
 
 const deleteBtn = document.getElementById('removeBtn');
