@@ -29,8 +29,14 @@ openFormBtn.addEventListener('click', function(e) {
         bookSubForm.classList.remove("form-active");
         bookSubForm.classList.add('form-transition');
         bookSubForm.classList.add('form-hidden');
+    } else {
+        // show
+        bookSubForm.classList.add('form-visible');
+        bookSubForm.clientWidth;
+        bookSubForm.classList.add('form-transition');
+        bookSubForm.classList.add('form-active');
     }
-})
+});
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
