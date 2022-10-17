@@ -9,6 +9,7 @@ body {
     background-color: var(--color1);
     display: flex;
     flex-direction: column;
+    justify-content: center;
     height: 98.5vh;
 }
 
@@ -95,6 +96,11 @@ fieldset > legend {
     height: 60px;
     width: 60px;
     border-radius: 50%;
+    outline: none;
+    border: 8px solid rgb(0, 189, 31);
+    background-color: rgb(194, 194, 194);
+    font-size: 34px;
+    font-weight: 700;
 }
 
 footer, footer> a {
