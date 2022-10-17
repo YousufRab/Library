@@ -19,6 +19,8 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
+
+
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
     formTitle = document.getElementById('bookName').value;
@@ -191,10 +193,6 @@ function createCard () {
     read.append(firstRadioBtn, firstLabel, secondRadioBtn, secondLabel);
     newCard.append(title, author, length, read, newDeleteBtn);
 
-}
-
-function openForm () {
-    document.getElementById('bookForm').style.display = 'block';
 }
 
 myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
