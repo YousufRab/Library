@@ -24,7 +24,12 @@ const bookSubForm = document.querySelector('.form');
 // Button for opening add book form
 const openFormBtn = document.querySelector('.openForm');
 openFormBtn.addEventListener('click', function(e) {
-    
+    if (bookSubForm.classList.contains("form-active")) {
+        //hide
+        bookSubForm.classList.remove("form-active");
+        bookSubForm.classList.add('form-transition');
+        bookSubForm.classList.add('form-hidden');
+    }
 })
 
 const formSubBtn = document.querySelector('#formSub');
