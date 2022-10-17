@@ -19,7 +19,11 @@ function Book(title, author, pages, read) {
     this.read = read;
 }
 
-
+// Button for opening add book form
+const openFormBtn = document.querySelector('.openForm');
+openFormBtn.addEventListener('click', function(e) {
+    
+})
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
