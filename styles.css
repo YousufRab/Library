@@ -85,3 +85,12 @@ fieldset > legend {
 #prototypeCard {
     display: none;
 }
+
+footer, footer> a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    letter-spacing: 0.8px;
+    font-weight: 600;
+}
