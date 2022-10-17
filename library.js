@@ -36,7 +36,7 @@ openFormBtn.addEventListener('click', function(e) {
         bookSubForm.classList.add('form-transition');
         bookSubForm.classList.add('form-active');
     }
-});
+}, false);
 
 const formSubBtn = document.querySelector('#formSub');
 formSubBtn.addEventListener('click', () => {
