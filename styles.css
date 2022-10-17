@@ -90,6 +90,10 @@ fieldset > legend {
     display: none;
 }
 
+.openForm {
+    
+}
+
 footer, footer> a {
     color: white;
     text-decoration: none;
