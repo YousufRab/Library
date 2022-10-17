@@ -105,7 +105,8 @@ fieldset > legend {
 }
 
 .openForm:hover {
-    
+    border: 8px solid rgb(50, 255, 84);
+    background-color: white;
 }
 
 footer, footer> a {
