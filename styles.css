@@ -27,7 +27,7 @@ h2 {
 }
 
 .card {
-    border: 1px solid red;
+    border: 3px solid rgb(209, 0, 0);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -55,10 +55,10 @@ h2 {
     width: 130px;
     height: 40px;
     align-self: center;
+    font-family: 'Roboto', sans-serif;
+    border: 2.5px solid white;
+    outline: none;
 }
-
-/* Use instructions from following link to create fade in/out effect for submit form
-   https://www.impressivewebs.com/animate-display-block-none/ */
 
 .form {
     display: none;
