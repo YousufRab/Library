@@ -114,7 +114,7 @@ function displayBooks () {
             newCard.classList.add("card");
             const title = document.createElement("p");
             title.classList.add("title");
-            title.textContent = "Title: " + myLibrary[i].title;
+            title.textContent = `"` + myLibrary[i].title + `"`;
             const author = document.createElement("p");
             author.classList.add("author");
             author.textContent = "Author: " + myLibrary[i].author;
@@ -173,7 +173,7 @@ function createCard () {
     newCard.classList.add("card");
     const title = document.createElement("p");
     title.classList.add("title");
-    title.textContent = "Title: " + tempTitle;
+    title.textContent = `"` + tempTitle + `"`;
     const author = document.createElement("p");
     author.classList.add("author");
     author.textContent = "Author: " + tempAuthor;
