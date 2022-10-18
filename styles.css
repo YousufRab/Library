@@ -48,6 +48,10 @@ h2 {
     flex: 1 1 auto;
 }
 
+.card > p:nth-child(1) {
+    font-size: 32px;
+}
+
 .rmBtn1 {
     border-radius: 15px;
     margin-top: 20px;
