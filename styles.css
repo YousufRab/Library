@@ -66,7 +66,7 @@ h2 {
 .rmBtn2 {
     border: 2.5px solid rgb(255, 255, 255);
     z-index: 1;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .rmBtn2::after {
@@ -76,6 +76,19 @@ h2 {
     height: 0;
     top: 0;
     left: 0;
+    z-index: -1;
+    background: rgb(0, 0, 0);
+    transition: all 0.3s ease;
+}
+
+.rmBtn2:hover {
+    color: rgb(255, 255, 255);
+}
+
+.rmBtn2:hover::after {
+    top: auto;
+    bottom: 0;
+    height: 100%;
 }
 
 .form {
