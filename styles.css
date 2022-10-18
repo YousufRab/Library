@@ -37,6 +37,11 @@ h2 {
     height: 350px;
 }
 
+.card > p, .card > div, .card > button {
+    text-align: center;
+    
+}
+
 /* Use instructions from following link to create fade in/out effect for submit form
    https://www.impressivewebs.com/animate-display-block-none/ */
 
