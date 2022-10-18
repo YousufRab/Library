@@ -71,6 +71,11 @@ h2 {
 
 .rmBtn2::after {
     position: absolute;
+    content: "";
+    width: 130px;
+    height: 0;
+    top: 0;
+    left: 0;
 }
 
 .form {
