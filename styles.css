@@ -58,6 +58,7 @@ h2 {
     font-family: 'Roboto', sans-serif;
     border: 2.5px solid white;
     outline: none;
+    cursor: pointer;
 }
 
 .form {
