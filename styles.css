@@ -84,12 +84,19 @@ h2 {
 
 .rmBtn2:hover {
     color: rgb(255, 255, 255);
+    border: 2.5px solid rgb(255, 255, 255);
 }
 
 .rmBtn2:hover::after {
     top: auto;
     bottom: 0;
     height: 100%;
+}
+
+.rmBtn2:active {
+    border: 2.5px solid red;
+    background-color:black;
+    font-weight: 900;
 }
 
 .form {
