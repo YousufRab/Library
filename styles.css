@@ -39,7 +39,7 @@ h2 {
     background-color: var(--color2);
     color: var(--color1);
     width: 260px;
-    height: 340px;
+    height: 320px;
     padding: 15px;
 }
 
@@ -50,6 +50,7 @@ h2 {
 
 .card > p:nth-child(1) {
     font-size: 28px;
+    margin-top: 0;
 }
 
 .rmBtn1 {
