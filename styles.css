@@ -42,7 +42,8 @@ h2 {
 
 .card > p, .card > div, .card > button {
     text-align: center;
-    
+    justify-content: center;
+    flex: 1 1 auto;
 }
 
 /* Use instructions from following link to create fade in/out effect for submit form
