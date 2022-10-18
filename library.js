@@ -154,6 +154,7 @@ function displayBooks () {
             newDeleteBtn.setAttribute('type', 'button');
             newDeleteBtn.id = "removeBtn";
             newDeleteBtn.textContent = "Remove";
+            newDeleteBtn.classList.add("rmBtn1", "rmBtn2");
             newDeleteBtn.onclick = (event) => {
                 (event.target.parentElement).remove();
             }
@@ -219,6 +220,7 @@ function createCard () {
     newDeleteBtn.setAttribute('type', 'button');
     newDeleteBtn.id = "removeBtn";
     newDeleteBtn.textContent = "Remove";
+    newDeleteBtn.classList.add("rmBtn1", "rmBtn2");
     newDeleteBtn.onclick = (event) => {
         (event.target.parentElement).remove();
     }
