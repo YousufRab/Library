@@ -32,7 +32,9 @@ h2 {
     font-weight: 600;
     letter-spacing: 1px;
     background-color: var(--color2);
-    color: var(--color1)
+    color: var(--color1);
+    width: 300px;
+    height: 350px;
 }
 
 /* Use instructions from following link to create fade in/out effect for submit form
