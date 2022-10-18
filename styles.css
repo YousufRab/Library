@@ -28,6 +28,7 @@ h2 {
 
 .card {
     border: 1px solid red;
+    border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,9 +50,10 @@ h2 {
 
 .card > button {
     border-radius: 12px;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-bottom: 5px;
     width: 130px;
+    height: 40px;
     align-self: center;
 }
 
