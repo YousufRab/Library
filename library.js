@@ -218,7 +218,7 @@ function createCard () {
     const newDeleteBtn = document.createElement('button');
     newDeleteBtn.setAttribute('type', 'button');
     newDeleteBtn.id = "removeBtn";
-    newDeleteBtn.textContent = "Remove from Library";
+    newDeleteBtn.textContent = "Remove";
     newDeleteBtn.onclick = (event) => {
         (event.target.parentElement).remove();
     }
