@@ -30,6 +30,7 @@ h2 {
     border: 1px solid red;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
     font-size: 20px;
@@ -43,12 +44,15 @@ h2 {
 
 .card > p, .card > div, .card > button {
     text-align: center;
-    justify-content: center;
     flex: 1 1 auto;
 }
 
 .card > button {
     border-radius: 12px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    width: 130px;
+    align-self: center;
 }
 
 /* Use instructions from following link to create fade in/out effect for submit form
