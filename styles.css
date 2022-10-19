@@ -260,6 +260,7 @@ fieldset > div:nth-child(4) > input {
     background-color: black;
     color: white;
     font-weight: 800;
+    border: 2px solid white;
 }
 
 #prototypeCard {
