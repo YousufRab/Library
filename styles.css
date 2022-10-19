@@ -295,16 +295,24 @@ fieldset > div:nth-child(4) > input + label:hover {
 #bookReadRadioBtn:checked + label {
     background-color: var(--color1);
     color: var(--color2);
+    font-weight: 600;
 }
 
 #bookNotReadRadioBtn:checked + label {
     background-color: var(--color1);
     color: var(--color2);
+    font-weight: 600;
 }
 
 fieldset > div:nth-child(4) > input + label:first-of-type {
     border-radius: 22px 0 0 22px;
 }
+
+fieldset > div:nth-child(4) > input + label:last-of-type {
+    border-radius: 0px 22px 22px 0px;
+}
+
+/* Radio buttons on card displays styling below */
 
 #prototypeCard {
     display: none;
