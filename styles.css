@@ -233,14 +233,6 @@ input:invalid + span::before {
     color: red;
 }
 
-fieldset > div:nth-child(4) > label {
-    width: 60px;
-}
-
-fieldset > div:nth-child(4) > input {
-    margin-bottom: 15px;
-} 
-
 #formSub {
     width: 180px;
     height: 50px;
@@ -263,6 +255,18 @@ fieldset > div:nth-child(4) > input {
     font-weight: 600;
     border: 2px solid white;
 }
+
+/* Styling for radio buttons in each card and in submission form */
+
+fieldset > div:nth-child(4) > label {
+    width: 60px;
+}
+
+fieldset > div:nth-child(4) > input {
+    margin-bottom: 12px;
+    margin-top: 12px;
+} 
+
 
 #prototypeCard {
     display: none;
