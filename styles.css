@@ -291,6 +291,13 @@ fieldset > div:nth-child(4) > input + label:hover {
     cursor: pointer;
 }
 
+#bookReadRadioBtn:checked+label {
+    background-color: var(--color1);
+    color: var(--color2);
+}
+
+
+
 #prototypeCard {
     display: none;
 }
