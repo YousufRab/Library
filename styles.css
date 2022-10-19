@@ -247,6 +247,8 @@ fieldset > div:nth-child(4) > input {
     align-self: center;
     margin-top: 10px;
     border-radius: 20px;
+    border: 2px solid white;
+    font-size: 16px;
 }
 
 #prototypeCard {
