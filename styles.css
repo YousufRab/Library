@@ -190,6 +190,10 @@ input:hover, input:focus {
     background-color: rgb(223, 223, 223);
 }
 
+input + span {
+    position: relative;
+}
+
 fieldset > div:nth-child(4) > label {
     width: 60px;
 }
