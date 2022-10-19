@@ -237,7 +237,7 @@ input:invalid + span::before {
     width: 180px;
     height: 50px;
     align-self: center;
-    margin-top: 10px;
+    margin-top: 15px;
     border-radius: 20px;
     border: 2px solid white;
     font-size: 16px;
@@ -284,6 +284,7 @@ fieldset > div:nth-child(4) > input + label {
     text-align: center;
     padding: 0.5em 2em;
     border: 2px solid grey;
+    margin-top: 8px;
 }
 
 #prototypeCard {
