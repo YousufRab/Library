@@ -275,8 +275,8 @@ fieldset > div:nth-child(4) {
 #bookReadRadioBtn, #bookNotReadRadioBtn {
     position: absolute;
     clip: rect(0,0,0,0);
-    height: 0px;
-    width: 0px;
+    height: 1px;
+    width: 1px;
 }
 
 fieldset > div:nth-child(4) > input + label {
@@ -291,12 +291,15 @@ fieldset > div:nth-child(4) > input + label:hover {
     cursor: pointer;
 }
 
-#bookReadRadioBtn:checked+label {
+#bookReadRadioBtn:checked + label {
     background-color: var(--color1);
     color: var(--color2);
 }
 
-
+#bookNotReadRadioBtn:checked + label {
+    background-color: var(--color1);
+    color: var(--color2);
+}
 
 #prototypeCard {
     display: none;
