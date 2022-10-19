@@ -256,7 +256,8 @@ input:invalid + span::before {
     border: 2px solid white;
 }
 
-/* Styling for radio buttons in each card and in submission form */
+/* Styling for radio buttons in each card and in submission form 
+   First we will do the submission form radio buttons styling */
 
 fieldset > div:nth-child(4) > label {
     width: 60px;
@@ -299,6 +300,10 @@ fieldset > div:nth-child(4) > input + label:hover {
 #bookNotReadRadioBtn:checked + label {
     background-color: var(--color1);
     color: var(--color2);
+}
+
+fieldset > div:nth-child(4) > input + label:first-of-type {
+    border-radius: 22px 0 0 22px;
 }
 
 #prototypeCard {
