@@ -280,6 +280,8 @@ fieldset > div:nth-child(4) {
 
 fieldset > div:nth-child(4) > input + label {
     font-size: 1em;
+    text-align: center;
+    padding: 0.5em 2em;
 }
 
 #prototypeCard {
