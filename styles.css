@@ -167,6 +167,7 @@ fieldset {
     padding: 22px;
     border-radius: 20px;
     border: 3px solid rgb(0, 189, 31);
+    font-size: 18px;
 }
 
 fieldset > div:nth-child(-n+3) > label {
