@@ -208,6 +208,27 @@ input:required + span::after {
     left: -50px;
 }
 
+input + span::before {
+    position: absolute;
+    right: -18px;
+    top: 3px;
+}
+
+input:valid + span::before {
+    content: '✓';
+    color: green;
+    font-size: 1.1rem;
+}
+
+input:invalid {
+    border: 2px solid red;
+}
+
+input:invalid + span::before {
+    content: "✖";
+    color: red;
+}
+
 fieldset > div:nth-child(4) > label {
     width: 60px;
 }
