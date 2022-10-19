@@ -124,7 +124,7 @@ h2 {
     letter-spacing: 0.5px;
     color: var(--color1);
     height: 400px;
-    width: 500px;
+    width: 300px;
     position: absolute;
     right: 0;
     left: 0;
@@ -160,11 +160,19 @@ h2 {
 fieldset {
     background-color: var(--color2);
     color: var(--color1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
 }
 
 fieldset > div > label {
     display: inline-block;
     width: 285px;
+}
+
+fieldset > div:nth-child(4) > label {
+    width: 100px;
 }
 
 #prototypeCard {
