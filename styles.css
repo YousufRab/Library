@@ -267,6 +267,18 @@ fieldset > div:nth-child(4) > input {
     margin-top: 12px;
 } 
 
+fieldset > div:nth-child(4) {
+    display: flex;
+}
+
+ #bookReadRadioBtn, #bookNotReadRadioBtn {
+    position: absolute;
+    clip: rect(0,0,0,0);
+    height: 0px;
+    width: 0px;
+}
+
+
 
 #prototypeCard {
     display: none;
