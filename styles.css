@@ -186,6 +186,10 @@ fieldset > div:nth-child(-n+3) > input {
     padding-bottom: 3px;
 }
 
+input:hover, input:focus {
+    background-color: rgb(223, 223, 223);
+}
+
 fieldset > div:nth-child(4) > label {
     width: 60px;
 }
