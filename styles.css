@@ -128,7 +128,7 @@ h2 {
     position: absolute;
     right: 0;
     left: 0;
-    top: 180px;
+    top: 120px;
     bottom: 0;
     margin: auto;
     opacity: 0;
@@ -192,6 +192,15 @@ input:hover, input:focus {
 
 input + span {
     position: relative;
+}
+
+input:required + span::after {
+    font-size: 0.6rem;
+    position: absolute;
+    content: "required";
+    padding: 3px 5px;
+    top: -20px;
+    left: -280px;
 }
 
 fieldset > div:nth-child(4) > label {
