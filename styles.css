@@ -172,7 +172,11 @@ fieldset {
 fieldset > div:nth-child(-n+3) > label {
     display: inline-block;
     width: 285px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+fieldset > div:nth-child(2) > label, fieldset > div:nth-child(3) > label {
+    margin-top: 10px;
 }
 
 fieldset > div:nth-child(-n+3) > input {
@@ -200,7 +204,7 @@ input:required + span::after {
     content: "required";
     padding: 3px 5px;
     top: -20px;
-    left: -280px;
+    left: -50px;
 }
 
 fieldset > div:nth-child(4) > label {
