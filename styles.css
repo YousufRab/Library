@@ -164,21 +164,31 @@ fieldset {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    padding: 22px;
+    border-radius: 20px;
+    border: 3px solid rgb(0, 189, 31);
 }
 
-fieldset > div > label {
+fieldset > div:nth-child(-n+3) > label {
     display: inline-block;
     width: 285px;
     margin-bottom: 10px;
 }
 
-fieldset > div > input {
+fieldset > div:nth-child(-n+3) > input {
     margin-bottom: 10px;
+    width: 250px;
+    height: 22px;
+    border-radius: 6px;
 }
 
 fieldset > div:nth-child(4) > label {
-    width: 75px;
+    width: 60px;
 }
+
+fieldset > div:nth-child(4) > input {
+    margin-bottom: 15px;
+} 
 
 #prototypeCard {
     display: none;
