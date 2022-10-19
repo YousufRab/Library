@@ -269,6 +269,7 @@ fieldset > div:nth-child(4) > input {
 
 fieldset > div:nth-child(4) {
     display: flex;
+    justify-content: center;
 }
 
 #bookReadRadioBtn, #bookNotReadRadioBtn {
@@ -279,9 +280,10 @@ fieldset > div:nth-child(4) {
 }
 
 fieldset > div:nth-child(4) > input + label {
-    font-size: 1em;
+    font-size: 0.8em;
     text-align: center;
     padding: 0.5em 2em;
+    border: 2px solid grey;
 }
 
 #prototypeCard {
