@@ -169,13 +169,15 @@ fieldset {
 fieldset > div > label {
     display: inline-block;
     width: 285px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
-
+fieldset > div > input {
+    margin-bottom: 10px;
+}
 
 fieldset > div:nth-child(4) > label {
-    width: 100px;
+    width: 75px;
 }
 
 #prototypeCard {
