@@ -257,7 +257,9 @@ fieldset > div:nth-child(4) > input {
 }
 
 #formSub:active {
-    
+    background-color: black;
+    color: white;
+    font-weight: 800;
 }
 
 #prototypeCard {
