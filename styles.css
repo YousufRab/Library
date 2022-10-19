@@ -287,6 +287,10 @@ fieldset > div:nth-child(4) > input + label {
     margin-top: 8px;
 }
 
+fieldset > div:nth-child(4) > input + label:hover {
+    cursor: pointer;
+}
+
 #prototypeCard {
     display: none;
 }
