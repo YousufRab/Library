@@ -169,7 +169,10 @@ fieldset {
 fieldset > div > label {
     display: inline-block;
     width: 285px;
+    margin-bottom: 12px;
 }
+
+
 
 fieldset > div:nth-child(4) > label {
     width: 100px;
