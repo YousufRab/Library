@@ -321,6 +321,14 @@ fieldset > div:nth-child(4) > input + label:last-of-type {
     width: 70px;
 }
 
+.read {
+    display: flex;
+    justify-content: center;
+}
+
+.read > input {
+    
+}
 
 #prototypeCard {
     display: none;
