@@ -307,11 +307,11 @@ fieldset > div:nth-child(4) > input + label:hover, .read > input + label:hover {
     font-weight: 600;
 }
 
-fieldset > div:nth-child(4) > input + label:first-of-type {
+fieldset > div:nth-child(4) > input + label:first-of-type, .read> input + label:first-of-type {
     border-radius: 22px 0 0 22px;
 }
 
-fieldset > div:nth-child(4) > input + label:last-of-type {
+fieldset > div:nth-child(4) > input + label:last-of-type, .read > input + label:last-of-type {
     border-radius: 0px 22px 22px 0px;
 }
 
@@ -319,11 +319,20 @@ fieldset > div:nth-child(4) > input + label:last-of-type {
 
 .read > label {
     width: 70px;
+    margin-bottom: 20px;
+    height: 40px;
+    text-align: center;
+    align-self: center;
+}
+
+.read> input + label:first-of-type {
+    text-align: center;
 }
 
 .read {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .read > input {
