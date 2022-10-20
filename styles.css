@@ -317,6 +317,11 @@ fieldset > div:nth-child(4) > input + label:last-of-type {
 
 /* Radio buttons on card displays styling below */
 
+.read > label {
+    width: 70px;
+}
+
+
 #prototypeCard {
     display: none;
 }
