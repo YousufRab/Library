@@ -16,8 +16,9 @@ body {
 .library {
     display: grid;
     row-gap: 10px;
-    column-gap: 10px;
+    column-gap: 20px;
     grid-template-rows: auto 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
 }
 
 h2 {
