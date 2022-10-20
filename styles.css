@@ -16,6 +16,7 @@ body {
 .library {
     display: grid;
     row-gap: 10px;
+    column-gap: 10px;
 }
 
 h2 {
