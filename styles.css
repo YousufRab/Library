@@ -271,6 +271,8 @@ fieldset > div:nth-child(4) > input {
 fieldset > div:nth-child(4) {
     display: flex;
     justify-content: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
 }
 
 #bookReadRadioBtn, #bookNotReadRadioBtn {
@@ -286,6 +288,7 @@ fieldset > div:nth-child(4) > input + label {
     padding: 0.5em 2em;
     border: 2px solid grey;
     margin-top: 8px;
+    transition: all 0.5s ease;
 }
 
 fieldset > div:nth-child(4) > input + label:hover {
