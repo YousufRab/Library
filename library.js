@@ -11,7 +11,7 @@ let tempAuthor = "";
 let tempPages = 0;
 let tempRead = false;
 
-// Create class object Book
+// Create class myBook
 class myBook {
     constructor(title, author, pages, read) {
         this.title = title;
@@ -21,8 +21,8 @@ class myBook {
     }
 }
 
-
 // Constructor for Book objects 
+// Not used in this version of library. Class is preferred in this version
 function Book(title, author, pages, read) {
     this.title = title;
     this.author = author;
@@ -65,7 +65,7 @@ formSubBtn.addEventListener('click', () => {
         return;
     }
     collectFormValues();
-    myLibrary.push(new Book(tempTitle, tempAuthor, tempPages, tempRead));
+    myLibrary.push(new myBook(tempTitle, tempAuthor, tempPages, tempRead));
     createCard();
     if (bookSubForm.classList.contains("form-active")) {
         //hide
@@ -242,7 +242,7 @@ function createCard () {
 
 }
 
-myLibrary.push(new Book("The Lord of the Rings", "JRR Tolkein", 1178, true));
+myLibrary.push(new myBook("The Lord of the Rings", "JRR Tolkein", 1178, true));
 
 // Create event listener for page loading and run displayBooks to display myLibrary objects
 console.log(myLibrary)
