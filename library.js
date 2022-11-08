@@ -11,6 +11,17 @@ let tempAuthor = "";
 let tempPages = 0;
 let tempRead = false;
 
+// Create class object Book
+class myBook {
+    constructor(title, author, pages, read) {
+        this.title = title;
+        this.author = author;
+        this.pages = pages;
+        this.read = read;
+    }
+}
+
+
 // Constructor for Book objects 
 function Book(title, author, pages, read) {
     this.title = title;
